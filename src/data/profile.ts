@@ -6,7 +6,7 @@ export const profile = {
   roles: [
     'Full-Stack MERN Developer',
     'React & TypeScript Specialist',
-    'AI/ML Engineer',
+    'AI/ML Enthusiast',
   ],
   location: 'Hyderabad, Telangana, India',
   email: 'pawansingh22477@gmail.com',
