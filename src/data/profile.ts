@@ -16,13 +16,8 @@ export const profile = {
   availability: 'Open to Full-Stack / React / AI-ML roles',
   resumeUrl: '/Pavan_Singh_Resume.pdf',
   summary: `
-I'm a Full-Stack MERN Developer with production experience building scalable web applications using React, TypeScript, Next.js, Node.js, Express.js, and MongoDB. During my internship at Ctruh, I contributed to multiple production platforms spanning AI SaaS, gaming, enterprise CMS, virtual try-on, and 3D real-estate, delivering reusable React components, responsive interfaces, and seamless API integrations.
+I'm a Full-Stack MERN Developer with production experience building scalable web applications using React, TypeScript, Next.js, Node.js, Express.js, and MongoDB. Passionate about AI, I enjoy building intelligent applications with Python, Machine Learning, Computer Vision, and Large Language Models. I focus on creating fast, scalable, and user-centric products that solve real-world problems, and I'm actively seeking opportunities as a Full-Stack, React, MERN, or AI Engineer.
 
-Beyond traditional web development, I'm passionate about building intelligent products. I enjoy combining Python, Machine Learning, Computer Vision, and Large Language Models to create applications that solve real-world problems—from AI-powered travel planning and computer vision systems to interactive user experiences powered by modern AI APIs.
-
-I believe great software isn't just clean code—it's fast, accessible, scalable, and enjoyable to use. Whether I'm translating complex Figma designs into production-ready interfaces or integrating AI capabilities into modern web applications, my goal is always the same: build products that deliver real value to users while maintaining high engineering standards.
-
-I'm currently seeking opportunities where I can contribute as a Full-Stack, React, MERN, or AI Engineer, collaborate with ambitious teams, and continue building products that make an impact.
 `,
   quickFacts: [
     { label: 'Based in', value: 'Hyderabad, India' },
