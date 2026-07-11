@@ -15,8 +15,15 @@ export const profile = {
   github: 'https://github.com',
   availability: 'Open to Full-Stack / React / AI-ML roles',
   resumeUrl: '/Pavan_Singh_Resume.pdf',
-  summary:
-    "I build production web applications with React, TypeScript, and Node — the kind that ship, hold up under load, and don't fall apart the first time a designer changes a breakpoint. Over the past year I've shipped 20+ components across gaming, 3D real-estate, and AI SaaS platforms, and I bring a second toolkit — Python, computer vision, and the OpenAI API — when a product needs intelligence baked in rather than bolted on.",
+  summary: `
+I'm a Full-Stack MERN Developer with production experience building scalable web applications using React, TypeScript, Next.js, Node.js, Express.js, and MongoDB. During my internship at Ctruh, I contributed to multiple production platforms spanning AI SaaS, gaming, enterprise CMS, virtual try-on, and 3D real-estate, delivering reusable React components, responsive interfaces, and seamless API integrations.
+
+Beyond traditional web development, I'm passionate about building intelligent products. I enjoy combining Python, Machine Learning, Computer Vision, and Large Language Models to create applications that solve real-world problems—from AI-powered travel planning and computer vision systems to interactive user experiences powered by modern AI APIs.
+
+I believe great software isn't just clean code—it's fast, accessible, scalable, and enjoyable to use. Whether I'm translating complex Figma designs into production-ready interfaces or integrating AI capabilities into modern web applications, my goal is always the same: build products that deliver real value to users while maintaining high engineering standards.
+
+I'm currently seeking opportunities where I can contribute as a Full-Stack, React, MERN, or AI Engineer, collaborate with ambitious teams, and continue building products that make an impact.
+`,
   quickFacts: [
     { label: 'Based in', value: 'Hyderabad, India' },
     { label: 'Focus', value: 'React · TypeScript · Node · AI' },
