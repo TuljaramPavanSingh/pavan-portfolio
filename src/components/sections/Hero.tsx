@@ -1,19 +1,30 @@
-import { Suspense, lazy } from 'react'
-import { motion } from 'framer-motion'
-import { FiArrowDown, FiDownload, FiGithub, FiLinkedin, FiMail, FiMapPin } from 'react-icons/fi'
-import { profile } from '@/data/profile'
-import { useTypewriter } from '@/hooks/useTypewriter'
-import profileImg from '@/assets/images/profile.jpg'
+import { Suspense, lazy } from "react";
+import { motion } from "framer-motion";
+import {
+  FiArrowDown,
+  FiDownload,
+  FiGithub,
+  FiLinkedin,
+  FiMail,
+  FiMapPin,
+} from "react-icons/fi";
+import { profile } from "@/data/profile";
+import { useTypewriter } from "@/hooks/useTypewriter";
+import profileImg from "@/assets/images/profile.jpg";
 
-const ParticleField = lazy(() => import('@/components/ui/ParticleField'))
+const ParticleField = lazy(() => import("@/components/ui/ParticleField"));
 
 export default function Hero() {
-  const typed = useTypewriter(profile.roles)
+  const typed = useTypewriter(profile.roles);
 
-  const scrollToProjects = () => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })
+  const scrollToProjects = () =>
+    document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center pt-28 pb-20 overflow-hidden">
+    <section
+      id="hero"
+      className="relative min-h-screen flex items-center pt-28 pb-20 overflow-hidden"
+    >
       <Suspense fallback={null}>
         <ParticleField />
       </Suspense>
@@ -85,7 +96,8 @@ export default function Hero() {
               download
               className="group inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-purple)] font-medium hover:shadow-[0_0_30px_rgba(99,102,241,0.4)] transition-shadow focus-ring"
             >
-              <FiDownload className="group-hover:translate-y-0.5 transition-transform" /> Download Resume
+              <FiDownload className="group-hover:translate-y-0.5 transition-transform" />{" "}
+              Download Resume
             </a>
             <button
               onClick={scrollToProjects}
@@ -94,10 +106,22 @@ export default function Hero() {
               View Work
             </button>
             <div className="flex items-center gap-2 ml-1">
-              <a href={profile.github} target="_blank" rel="noreferrer" className="w-11 h-11 flex items-center justify-center rounded-xl border border-[var(--color-border)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors focus-ring" aria-label="GitHub">
+              <a
+                href={profile.github}
+                target="_blank"
+                rel="noreferrer"
+                className="w-11 h-11 flex items-center justify-center rounded-xl border border-[var(--color-border)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors focus-ring"
+                aria-label="GitHub"
+              >
                 <FiGithub />
               </a>
-              <a href={profile.linkedin} target="_blank" rel="noreferrer" className="w-11 h-11 flex items-center justify-center rounded-xl border border-[var(--color-border)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors focus-ring" aria-label="LinkedIn">
+              <a
+                href={profile.linkedin}
+                target="_blank"
+                rel="noreferrer"
+                className="w-11 h-11 flex items-center justify-center rounded-xl border border-[var(--color-border)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-colors focus-ring"
+                aria-label="LinkedIn"
+              >
                 <FiLinkedin />
               </a>
             </div>
@@ -121,26 +145,34 @@ export default function Hero() {
             </div>
             <motion.div
               animate={{ y: [0, -10, 0] }}
-              transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
+              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
               className="absolute -bottom-5 -left-6 glass rounded-xl px-4 py-3"
             >
-              <div className="font-mono text-xs text-[var(--color-muted)]">Currently</div>
+              <div className="font-mono text-xs text-[var(--color-muted)]">
+                Previously worked as
+              </div>
               <div className="text-sm font-medium">Full-Stack Dev @ Ctruh</div>
             </motion.div>
             <motion.div
               animate={{ y: [0, 10, 0] }}
-              transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
+              transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
               className="absolute -top-5 -right-6 glass rounded-xl px-4 py-3"
             >
               <div className="text-sm font-medium">1+ yr production</div>
-              <div className="font-mono text-xs text-[var(--color-muted)]">MERN · AI</div>
+              <div className="font-mono text-xs text-[var(--color-muted)]">
+                MERN · AI
+              </div>
             </motion.div>
           </div>
         </motion.div>
       </div>
 
       <motion.button
-        onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
+        onClick={() =>
+          document
+            .getElementById("about")
+            ?.scrollIntoView({ behavior: "smooth" })
+        }
         animate={{ y: [0, 8, 0] }}
         transition={{ duration: 1.8, repeat: Infinity }}
         className="absolute bottom-8 left-1/2 -translate-x-1/2 text-[var(--color-muted)] hover:text-white transition-colors focus-ring rounded-full p-2"
@@ -149,5 +181,5 @@ export default function Hero() {
         <FiArrowDown size={20} />
       </motion.button>
     </section>
-  )
+  );
 }
