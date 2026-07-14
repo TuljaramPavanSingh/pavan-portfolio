@@ -16,7 +16,7 @@ export const profile = {
   availability: 'Open to Full-Stack / React / AI-ML roles',
   resumeUrl: '/Pavan_Singh_Resume.pdf',
   summary: `
-I'm a Full-Stack MERN Developer with production experience building scalable web applications using React, TypeScript, Next.js, Node.js, Express.js, and MongoDB. Passionate about AI, I enjoy building intelligent applications with Python, Machine Learning, Computer Vision, and Large Language Models. I focus on creating fast, scalable, and user-centric products that solve real-world problems, and I'm actively seeking opportunities as a Full-Stack, React, MERN, or AI Engineer.
+I'm a Full-Stack MERN Developer with production experience building scalable web applications using React, TypeScript, Next.js, Node.js, Express.js, and MongoDB. During my internship, I contributed to production platforms including AI SaaS, gaming, enterprise CMS, virtual try-on, and 3D real-estate applications. Alongside web development, I enjoy building AI-powered solutions using Python, Machine Learning, Computer Vision, and Large Language Models. My goal is to create fast, scalable, and user-centric products that deliver real value.
 
 `,
   quickFacts: [
